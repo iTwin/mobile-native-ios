@@ -16,9 +16,7 @@ let package = Package(
   targets: [
     .binaryTarget(
         name: "ITwinMobileIos",
-        // TODO:  enable this once the repo is public
-        // url: "https://github.com/iTwin/itwin-mobile-ios-package/releases/download/2.16.3/itwin-mobile-ios.xcframework.zip",
-        url: "https://www.googleapis.com/drive/v3/files/1Hm8MjiuqeU7iQTl-ScJHNgiiZzYjmdGp?alt=media&key=AIzaSyBZl1A3Ko0UADApA-REFez5CEtGo1IFFo8",
+        url: "https://github.com/toddsouthenbentley/itwin-ios-test/releases/download/2.16.3/itwin-mobile-ios.xcframework.zip",
         checksum: "e07bf79606e43ce83759b49ed72f990888547b3093efe9cd3e41a0f22ed8b236")
   ]
 )
