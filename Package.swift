@@ -10,13 +10,13 @@ let package = Package(
   ],
   products: [
     .library(
-        name: "itwin-mobile-ios",
-        targets: ["itwin-mobile-ios"]),
+        name: "IModelJs",
+        targets: ["IModelJs"]),
   ],
   targets: [
     .binaryTarget(
-        name: "itwin-mobile-ios",
-        url: "https://github.com/toddsouthenbentley/itwin-iostest/releases/download/0.0.2/IModelJs.xcframework.zip",
-        checksum: "d43055ca0eb44f2df771620cb818ad5264ae1bcb971e3699b33b6c68005509c8")
+        name: "IModelJs",
+        url: "https://github.com/toddsouthenbentley/itwin-iostest/releases/download/0.0.3/IModelJs.xcframework.zip",
+        checksum: "780c75fb07c345269700e8443fa322c29b1d5217410d30a252fdadf7b91b048d")
   ]
 )
