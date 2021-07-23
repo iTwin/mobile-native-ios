@@ -1,16 +1,19 @@
 {
   "name": "itwin-mobile-ios-package",
-  "version": "2.16.3",
+  "version": "0.0.3",
   "description": "iOS package for imodeljs binaries",
   "scripts": {
-    "build": "npm run xcframework & npm run zip & npm run checksum",
-    "xcframework": "xcodebuild -create-xcframework -framework ./node_modules/@bentley/imodeljs-ios-x64/IModelJsNative.framework -framework ./node_modules/@bentley/imodeljs-ios-arm64/IModelJsNative.framework -output ./build/itwin-mobile-ios.xcframework",
-    "zip": "cd ./build && zip -r itwin-mobile-ios.xcframework.zip itwin-mobile-ios.xcframework",
-    "checksum": "swift package compute-checksum ./build/itwin-mobile-ios.xcframework.zip",
-    "release": "gh release create -n '' -t '' $npm_package_version ./build/itwin-mobile-ios.xcframework.zip"
+    "build": "npm run xcframework && npm run zip && npm run genpackage",
+    "clean": "rimraf build",
+    "xcframework": "xcodebuild -create-xcframework -framework ./node_modules/@bentley/imodeljs-ios-x64/IModelJsNative.framework -framework ./node_modules/@bentley/imodeljs-ios-arm64/IModelJsNative.framework -output ./build/IModelJs.xcframework",
+    "zip": "cd ./build && zip -r IModelJs.xcframework.zip IModelJs.xcframework",
+    "genpackage": "CHECKSUM=$(swift package compute-checksum ./build/IModelJs.xcframework.zip) VERSION=$npm_package_version envsub Package.swift.template Package.swift",
+    "release": "gh release create -p -n 'Version '$npm_package_version -t 'v'$npm_package_version $npm_package_version ./build/IModelJs.xcframework.zip"
   },
   "dependencies": {
     "@bentley/imodeljs-ios-arm64": "^2.16.3",
-    "@bentley/imodeljs-ios-x64": "^2.16.3"
+    "@bentley/imodeljs-ios-x64": "^2.16.3",
+    "envsub": "^4.0.7",
+    "rimraf": "^2.7.1"
   }
 }
