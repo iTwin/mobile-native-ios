@@ -2,3 +2,4 @@ node_modules
 package-lock.json
 build/
 .swiftpm
+.DS_Store
