@@ -1,6 +1,6 @@
 {
   "name": "itwin-mobile-ios-package",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "iOS package for imodeljs binaries",
   "scripts": {
     "build": "npm run xcframework && npm run zip && npm run genpackage",
