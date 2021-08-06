@@ -10,12 +10,12 @@ let package = Package(
   ],
   products: [
     .library(
-        name: "IModelJs",
-        targets: ["IModelJs"]),
+        name: "IModelJsNative",
+        targets: ["IModelJsNative"]),
   ],
   targets: [
     .binaryTarget(
-        name: "IModelJs",
+        name: "IModelJsNative",
         url: "https://github.com/toddsouthenbentley/itwin-iostest/releases/download/${VERSION}/IModelJsNative.xcframework.zip",
         checksum: "${CHECKSUM}")
   ]

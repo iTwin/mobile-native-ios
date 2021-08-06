@@ -1,9 +1,9 @@
 {
   "name": "itwin-mobile-ios-package",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "iOS package for imodeljs binaries",
   "scripts": {
-    "build": "npm run xcframework && npm run zip && npm run genpackage",
+    "build": "npm run clean && npm run xcframework && npm run zip && npm run genpackage",
     "clean": "rimraf build",
     "xcframework": "xcodebuild -create-xcframework -framework ./node_modules/@bentley/imodeljs-ios-x64/IModelJsNative.framework -framework ./node_modules/@bentley/imodeljs-ios-arm64/IModelJsNative.framework -output ./build/IModelJsNative.xcframework",
     "xcflocal": "xcodebuild -create-xcframework -framework /Users/todd/macdev/imodel02/out-release/iOSX64/build/iModelJsHost/framework/IModelJsNative.framework -framework /Users/todd/macdev/imodel02/out-release/iOSARM64/build/iModelJsHost/framework/IModelJsNative.framework -output ./build/IModelJsNative.xcframework",
