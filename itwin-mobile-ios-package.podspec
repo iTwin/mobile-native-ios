@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "itwin-mobile-ios-package"
-  spec.version      = "402"
+  spec.version      = "2.19.17"
   spec.summary      = "iOS package for imodeljs binaries"
   #TODO: fix this URL when the repo is public
   # spec.homepage     = "https://github.com/iTwin/itwin-mobile-ios-package"
