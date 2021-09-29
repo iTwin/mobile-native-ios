@@ -1,6 +1,10 @@
 // swift-tools-version:5.3
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
+//---------------------------------------------------------------------------------------
+//
+//  $Copyright: (c) 2021 Bentley Systems, Incorporated. All rights reserved. $
+//
+//---------------------------------------------------------------------------------------
 import PackageDescription
 
 let package = Package(
@@ -16,7 +20,7 @@ let package = Package(
   targets: [
     .binaryTarget(
         name: "IModelJsNative",
-        url: "https://github.com/toddsouthenbentley/itwin-iostest/releases/download/2.19.17/IModelJsNative.xcframework.zip",
+        url: "https://github.com/iTwin/mobile-ios-package/releases/download/2.19.17/IModelJsNative.xcframework.zip",
         checksum: "308f862c78425657fdbbe4b4baf74638a4cc0234223400c4346267cdca9d8e3a")
   ]
 )

@@ -1,10 +1,13 @@
+#---------------------------------------------------------------------------------------
+#
+#  $Copyright: (c) 2021 Bentley Systems, Incorporated. All rights reserved. $
+#
+#---------------------------------------------------------------------------------------
 Pod::Spec.new do |spec|
   spec.name         = "itwin-mobile-ios-package"
   spec.version      = "2.19.17"
   spec.summary      = "iOS package for imodeljs binaries"
-  #TODO: fix this URL when the repo is public
-  # spec.homepage     = "https://github.com/iTwin/itwin-mobile-ios-package"
-  spec.homepage     = "https://github.com/toddsouthenbentley/itwin-iostest"
+  spec.homepage     = "https://github.com/iTwin/mobile-ios-package"
   spec.license      = "MIT"
   spec.author       = "Bentley Systems Inc."
   spec.platform     = :ios
