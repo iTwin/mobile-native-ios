@@ -5,10 +5,10 @@
 #
 #---------------------------------------------------------------------------------------
 Pod::Spec.new do |spec|
-  spec.name         = "itwin-mobile-ios-package"
+  spec.name         = "itwin-mobile-native-ios"
   spec.version      = "3.1.1"
   spec.summary      = "iOS package for imodeljs binaries"
-  spec.homepage     = "https://github.com/iTwin/mobile-ios-package"
+  spec.homepage     = "https://github.com/iTwin/mobile-native-ios"
   spec.license      = "MIT"
   spec.author       = "Bentley Systems Inc."
   spec.platform     = :ios

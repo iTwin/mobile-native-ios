@@ -9,7 +9,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "itwin-mobile-ios",
+  name: "itwin-mobile-native-ios",
   platforms: [
     .iOS("12.2"),
   ],
@@ -21,7 +21,7 @@ let package = Package(
   targets: [
     .binaryTarget(
         name: "IModelJsNative",
-        url: "https://github.com/iTwin/mobile-ios-package/releases/download/3.1.1/IModelJsNative.xcframework.zip",
+        url: "https://github.com/iTwin/mobile-native-ios/releases/download/3.1.1/IModelJsNative.xcframework.zip",
         checksum: "eaae39aa2bacd525605079f361d652f0c53b4ec79ea8347d6ab89755eff8069b")
   ]
 )
