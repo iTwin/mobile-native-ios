@@ -8,7 +8,7 @@ This is pre-release software and provided as-is.
 
 ## Note
 
-Rather than using this package in a project, you should use the [mobile-sdk](https://github.com/iTwin/mobile-sdk) which has a dependency on this repo.
+Rather than using this package in a project, you should use the [mobile-sdk-ios](https://github.com/iTwin/mobile-sdk-ios) which has a dependency on this repo.
 
 ## About this Repository
 
