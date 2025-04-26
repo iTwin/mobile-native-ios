@@ -21,7 +21,7 @@ let package = Package(
   targets: [
     .binaryTarget(
         name: "IModelJsNative",
-        url: "https://github.com/iTwin/mobile-native-ios/releases/download/5.1.7/IModelJsNative.xcframework.zip",
-        checksum: "8868975ef1dd9a867c26b8d61946120589efc6bdc0a6c75cef8c4d6d74c4f9fe")
+        url: "https://github.com/iTwin/mobile-native-ios/releases/download/5.1.8/IModelJsNative.xcframework.zip",
+        checksum: "2046374a635b8a001a438399219bbef38842c9d188ce5eed9225337d15b5f5ab")
   ]
 )
